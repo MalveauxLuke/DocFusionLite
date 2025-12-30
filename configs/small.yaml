@@ -1,0 +1,30 @@
+model:
+  mode: "3.1"     # simpler architecture for debugging
+
+  # Smaller sizes, much cheaper to run
+  d_model: 256
+  d_region: 64
+  d_patch: 256
+
+  n_heads: 4
+  num_fusion_layers: 1
+  num_encoder_layers: 1
+
+  num_labels: 4     # you can keep 16 if needed
+
+  dropout: 0.1
+
+  use_gate_stem: false
+  use_gate_fusion_layer: false
+  use_region_ffn: true
+
+  # Tiny backbones for quick CPU/GPU runs
+  text_model_name: "microsoft/deberta-v3-small"
+  vision_model_name: "microsoft/dit-small"
+
+training:
+  batch_size: 2
+  lr: 1e-4
+  weight_decay: 0.0
+  num_steps: 200
+  warmup_steps: 10

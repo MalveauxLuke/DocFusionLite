@@ -1,0 +1,35 @@
+model:
+  # Architecture mode: "3.1" (fusion-stem only) or "3.3" (fusion layers)
+  mode: "3.3"
+
+  # Hidden dimensions
+  d_model: 768
+  d_region: 256
+  d_patch: 768
+
+  # Attention configuration
+  n_heads: 8
+  num_fusion_layers: 4       # Only used in 3.3
+  num_encoder_layers: 2
+
+  # Prediction head
+  num_labels: 16
+
+  # Regularization
+  dropout: 0.1
+
+  # Optional gating behavior
+  use_gate_stem: false
+  use_gate_fusion_layer: false  # Only used in 3.3
+  use_region_ffn: true          # Only used in 3.3
+
+  # Backbones
+  text_model_name: "microsoft/deberta-v3-base"
+  vision_model_name: "microsoft/dit-base"
+
+training:
+  batch_size: 4
+  lr: 3e-5
+  weight_decay: 0.01
+  num_steps: 100000
+  warmup_steps: 2000
