@@ -1,0 +1,2543 @@
+{
+  "doc_id": "form-wh-380-e-813x1024-hw",
+  "page": 1,
+  "extracted": {
+    "name": [
+      "of",
+      "of",
+      "Hour",
+      "the",
+      "and",
+      "under",
+      "OF",
+      "and",
+      "of",
+      "need",
+      "an",
+      "require",
+      "may",
+      "due",
+      "to",
+      "by",
+      "the",
+      "days"
+    ],
+    "id": [
+      "Labor",
+      "U.S.",
+      "Provider for Care Certification Health",
+      "Department",
+      "WHD",
+      "Division",
+      "and Wage Serious Health Condition",
+      "Employee's",
+      "Medical",
+      "Leave",
+      "Act Family HOUR WAGE AND",
+      "Number: Control OMB",
+      "DEPARTMENT THE FORM NOT TO SEND COMPLETED",
+      "LABOR. DO",
+      "TO 6/30/2026 THE",
+      "PATIENT.",
+      "RETURN Expires: because The",
+      "Medical that",
+      "FMLA Leave Act",
+      "Family",
+      "an",
+      "seeking provides (FMLA) employer employee protections a",
+      "for issued health",
+      "certification submit condition leave the serious",
+      "U.S.C. 29 medical to",
+      "2613,",
+      "provider.",
+      "care a $$",
+      "If the 15 The",
+      "C.F.R. 29 825.305. the",
+      "calendar certification. to must at 2614(c)(3); provide $",
+      "employer employee employee give Information medical sufficient FMLA",
+      "C.F.R. leave 29 be and fails denied. his"
+    ],
+    "dob": [
+      "DIVISION"
+    ],
+    "phone": [
+      "health",
+      "a",
+      "employee's"
+    ]
+  },
+  "word_predictions": [
+    {
+      "word": "of",
+      "tag": "B-name"
+    },
+    {
+      "word": "Labor",
+      "tag": "B-id"
+    },
+    {
+      "word": "U.S.",
+      "tag": "B-id"
+    },
+    {
+      "word": "of",
+      "tag": "B-name"
+    },
+    {
+      "word": "Provider",
+      "tag": "B-id"
+    },
+    {
+      "word": "for",
+      "tag": "I-id"
+    },
+    {
+      "word": "Care",
+      "tag": "I-id"
+    },
+    {
+      "word": "Certification",
+      "tag": "I-id"
+    },
+    {
+      "word": "Health",
+      "tag": "I-id"
+    },
+    {
+      "word": "Department",
+      "tag": "B-id"
+    },
+    {
+      "word": "WHD",
+      "tag": "B-id"
+    },
+    {
+      "word": "Division",
+      "tag": "B-id"
+    },
+    {
+      "word": "Hour",
+      "tag": "I-name"
+    },
+    {
+      "word": "and",
+      "tag": "I-id"
+    },
+    {
+      "word": "Wage",
+      "tag": "I-id"
+    },
+    {
+      "word": "Serious",
+      "tag": "I-id"
+    },
+    {
+      "word": "Health",
+      "tag": "I-id"
+    },
+    {
+      "word": "Condition",
+      "tag": "I-id"
+    },
+    {
+      "word": "Employee's",
+      "tag": "B-id"
+    },
+    {
+      "word": "the",
+      "tag": "B-name"
+    },
+    {
+      "word": "Medical",
+      "tag": "I-id"
+    },
+    {
+      "word": "Leave",
+      "tag": "B-id"
+    },
+    {
+      "word": "and",
+      "tag": "B-name"
+    },
+    {
+      "word": "under",
+      "tag": "B-name"
+    },
+    {
+      "word": "Act",
+      "tag": "I-id"
+    },
+    {
+      "word": "Family",
+      "tag": "I-id"
+    },
+    {
+      "word": "HOUR",
+      "tag": "I-id"
+    },
+    {
+      "word": "WAGE",
+      "tag": "I-id"
+    },
+    {
+      "word": "AND",
+      "tag": "I-id"
+    },
+    {
+      "word": "DIVISION",
+      "tag": "B-dob"
+    },
+    {
+      "word": "1235-0003",
+      "tag": "O"
+    },
+    {
+      "word": "Number:",
+      "tag": "B-id"
+    },
+    {
+      "word": "Control",
+      "tag": "I-id"
+    },
+    {
+      "word": "OMB",
+      "tag": "I-id"
+    },
+    {
+      "word": "DEPARTMENT",
+      "tag": "B-id"
+    },
+    {
+      "word": "THE",
+      "tag": "I-id"
+    },
+    {
+      "word": "FORM",
+      "tag": "I-id"
+    },
+    {
+      "word": "NOT",
+      "tag": "I-id"
+    },
+    {
+      "word": "TO",
+      "tag": "I-id"
+    },
+    {
+      "word": "SEND",
+      "tag": "I-id"
+    },
+    {
+      "word": "COMPLETED",
+      "tag": "I-id"
+    },
+    {
+      "word": "LABOR.",
+      "tag": "B-id"
+    },
+    {
+      "word": "DO",
+      "tag": "I-id"
+    },
+    {
+      "word": "OF",
+      "tag": "B-name"
+    },
+    {
+      "word": "TO",
+      "tag": "I-id"
+    },
+    {
+      "word": "6/30/2026",
+      "tag": "I-id"
+    },
+    {
+      "word": "THE",
+      "tag": "I-id"
+    },
+    {
+      "word": "PATIENT.",
+      "tag": "B-id"
+    },
+    {
+      "word": "RETURN",
+      "tag": "B-id"
+    },
+    {
+      "word": "Expires:",
+      "tag": "I-id"
+    },
+    {
+      "word": "because",
+      "tag": "I-id"
+    },
+    {
+      "word": "The",
+      "tag": "I-id"
+    },
+    {
+      "word": "and",
+      "tag": "B-name"
+    },
+    {
+      "word": "Medical",
+      "tag": "I-id"
+    },
+    {
+      "word": "that",
+      "tag": "I-id"
+    },
+    {
+      "word": "of",
+      "tag": "B-name"
+    },
+    {
+      "word": "FMLA",
+      "tag": "I-id"
+    },
+    {
+      "word": "Leave",
+      "tag": "I-id"
+    },
+    {
+      "word": "Act",
+      "tag": "I-id"
+    },
+    {
+      "word": "need",
+      "tag": "B-name"
+    },
+    {
+      "word": "Family",
+      "tag": "I-id"
+    },
+    {
+      "word": "an",
+      "tag": "B-name"
+    },
+    {
+      "word": "an",
+      "tag": "I-id"
+    },
+    {
+      "word": "require",
+      "tag": "B-name"
+    },
+    {
+      "word": "seeking",
+      "tag": "I-id"
+    },
+    {
+      "word": "provides",
+      "tag": "I-id"
+    },
+    {
+      "word": "(FMLA)",
+      "tag": "I-id"
+    },
+    {
+      "word": "employer",
+      "tag": "I-id"
+    },
+    {
+      "word": "employee",
+      "tag": "I-id"
+    },
+    {
+      "word": "protections",
+      "tag": "I-id"
+    },
+    {
+      "word": "a",
+      "tag": "I-id"
+    },
+    {
+      "word": "may",
+      "tag": "B-name"
+    },
+    {
+      "word": "for",
+      "tag": "I-id"
+    },
+    {
+      "word": "issued",
+      "tag": "I-id"
+    },
+    {
+      "word": "health",
+      "tag": "I-id"
+    },
+    {
+      "word": "health",
+      "tag": "I-phone"
+    },
+    {
+      "word": "certification",
+      "tag": "I-id"
+    },
+    {
+      "word": "submit",
+      "tag": "I-id"
+    },
+    {
+      "word": "condition",
+      "tag": "I-id"
+    },
+    {
+      "word": "leave",
+      "tag": "I-id"
+    },
+    {
+      "word": "the",
+      "tag": "I-id"
+    },
+    {
+      "word": "serious",
+      "tag": "I-id"
+    },
+    {
+      "word": "due",
+      "tag": "B-name"
+    },
+    {
+      "word": "U.S.C.",
+      "tag": "B-id"
+    },
+    {
+      "word": "29",
+      "tag": "I-id"
+    },
+    {
+      "word": "medical",
+      "tag": "I-id"
+    },
+    {
+      "word": "to",
+      "tag": "I-id"
+    },
+    {
+      "word": "to",
+      "tag": "B-name"
+    },
+    {
+      "word": "2613,",
+      "tag": "I-id"
+    },
+    {
+      "word": "by",
+      "tag": "B-name"
+    },
+    {
+      "word": "provider.",
+      "tag": "I-id"
+    },
+    {
+      "word": "a",
+      "tag": "I-phone"
+    },
+    {
+      "word": "care",
+      "tag": "I-id"
+    },
+    {
+      "word": "a",
+      "tag": "I-id"
+    },
+    {
+      "word": "$$",
+      "tag": "I-id"
+    },
+    {
+      "word": "employee's",
+      "tag": "I-phone"
+    },
+    {
+      "word": "If",
+      "tag": "I-id"
+    },
+    {
+      "word": "the",
+      "tag": "I-id"
+    },
+    {
+      "word": "15",
+      "tag": "I-id"
+    },
+    {
+      "word": "The",
+      "tag": "I-id"
+    },
+    {
+      "word": "the",
+      "tag": "B-name"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "B-id"
+    },
+    {
+      "word": "29",
+      "tag": "I-id"
+    },
+    {
+      "word": "825.305.",
+      "tag": "I-id"
+    },
+    {
+      "word": "the",
+      "tag": "I-id"
+    },
+    {
+      "word": "least",
+      "tag": "O"
+    },
+    {
+      "word": "calendar",
+      "tag": "I-id"
+    },
+    {
+      "word": "certification.",
+      "tag": "I-id"
+    },
+    {
+      "word": "to",
+      "tag": "I-id"
+    },
+    {
+      "word": "must",
+      "tag": "I-id"
+    },
+    {
+      "word": "at",
+      "tag": "I-id"
+    },
+    {
+      "word": "2614(c)(3);",
+      "tag": "I-id"
+    },
+    {
+      "word": "provide",
+      "tag": "I-id"
+    },
+    {
+      "word": "$",
+      "tag": "I-id"
+    },
+    {
+      "word": "days",
+      "tag": "B-name"
+    },
+    {
+      "word": "employer",
+      "tag": "I-id"
+    },
+    {
+      "word": "employee",
+      "tag": "I-id"
+    },
+    {
+      "word": "employee",
+      "tag": "I-id"
+    },
+    {
+      "word": "give",
+      "tag": "I-id"
+    },
+    {
+      "word": "Information",
+      "tag": "I-id"
+    },
+    {
+      "word": "medical",
+      "tag": "I-id"
+    },
+    {
+      "word": "sufficient",
+      "tag": "I-id"
+    },
+    {
+      "word": "FMLA",
+      "tag": "I-id"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "B-id"
+    },
+    {
+      "word": "leave",
+      "tag": "I-id"
+    },
+    {
+      "word": "29",
+      "tag": "I-id"
+    },
+    {
+      "word": "be",
+      "tag": "I-id"
+    },
+    {
+      "word": "and",
+      "tag": "I-id"
+    },
+    {
+      "word": "fails",
+      "tag": "I-id"
+    },
+    {
+      "word": "denied.",
+      "tag": "I-id"
+    },
+    {
+      "word": "his",
+      "tag": "I-id"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "her",
+      "tag": "O"
+    },
+    {
+      "word": "825.313.",
+      "tag": "O"
+    },
+    {
+      "word": "certification,",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "provide",
+      "tag": "O"
+    },
+    {
+      "word": "complete",
+      "tag": "O"
+    },
+    {
+      "word": "$",
+      "tag": "O"
+    },
+    {
+      "word": "request",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "be",
+      "tag": "O"
+    },
+    {
+      "word": "website",
+      "tag": "O"
+    },
+    {
+      "word": "found",
+      "tag": "O"
+    },
+    {
+      "word": "WHD",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "about",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "at",
+      "tag": "O"
+    },
+    {
+      "word": "www.dol.gov/agencies/whd/fmla.",
+      "tag": "O"
+    },
+    {
+      "word": "on",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "I",
+      "tag": "O"
+    },
+    {
+      "word": "EMPLOYER",
+      "tag": "O"
+    },
+    {
+      "word": "SECTION",
+      "tag": "O"
+    },
+    {
+      "word": "this",
+      "tag": "O"
+    },
+    {
+      "word": "this",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "Either",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "form",
+      "tag": "O"
+    },
+    {
+      "word": "I.",
+      "tag": "O"
+    },
+    {
+      "word": "While",
+      "tag": "O"
+    },
+    {
+      "word": "form",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "Section",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "asks",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "optional,",
+      "tag": "O"
+    },
+    {
+      "word": "provider",
+      "tag": "O"
+    },
+    {
+      "word": "care",
+      "tag": "O"
+    },
+    {
+      "word": "use",
+      "tag": "O"
+    },
+    {
+      "word": "complete",
+      "tag": "O"
+    },
+    {
+      "word": "employer",
+      "tag": "O"
+    },
+    {
+      "word": "employee",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "information",
+      "tag": "O"
+    },
+    {
+      "word": "which",
+      "tag": "O"
+    },
+    {
+      "word": "You",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "sufficient",
+      "tag": "O"
+    },
+    {
+      "word": "825.306.",
+      "tag": "O"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "29",
+      "tag": "O"
+    },
+    {
+      "word": "ask",
+      "tag": "O"
+    },
+    {
+      "word": "out",
+      "tag": "O"
+    },
+    {
+      "word": "at",
+      "tag": "O"
+    },
+    {
+      "word": "set",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "certification,",
+      "tag": "O"
+    },
+    {
+      "word": "$",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "complete",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "necessary",
+      "tag": "O"
+    },
+    {
+      "word": "information",
+      "tag": "O"
+    },
+    {
+      "word": "825.306-825.308.",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "29",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "O"
+    },
+    {
+      "word": "than",
+      "tag": "O"
+    },
+    {
+      "word": "allowed",
+      "tag": "O"
+    },
+    {
+      "word": "under",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "more",
+      "tag": "O"
+    },
+    {
+      "word": "Additionally,",
+      "tag": "O"
+    },
+    {
+      "word": "provide",
+      "tag": "O"
+    },
+    {
+      "word": "regulations,",
+      "tag": "O"
+    },
+    {
+      "word": "employee",
+      "tag": "O"
+    },
+    {
+      "word": "$$",
+      "tag": "O"
+    },
+    {
+      "word": "you",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "child",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "child",
+      "tag": "O"
+    },
+    {
+      "word": "certification",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "bond",
+      "tag": "O"
+    },
+    {
+      "word": "with",
+      "tag": "O"
+    },
+    {
+      "word": "foster",
+      "tag": "O"
+    },
+    {
+      "word": "leave",
+      "tag": "O"
+    },
+    {
+      "word": "newborn",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "placed",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "care.",
+      "tag": "O"
+    },
+    {
+      "word": "adoption",
+      "tag": "O"
+    },
+    {
+      "word": "healthy",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "request",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "documents",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "records",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "maintain",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "must",
+      "tag": "O"
+    },
+    {
+      "word": "recertifications,",
+      "tag": "O"
+    },
+    {
+      "word": "certifications,",
+      "tag": "O"
+    },
+    {
+      "word": "information,",
+      "tag": "O"
+    },
+    {
+      "word": "Employers",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "relating",
+      "tag": "O"
+    },
+    {
+      "word": "generally",
+      "tag": "O"
+    },
+    {
+      "word": "histories",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "confidential",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "files",
+      "tag": "O"
+    },
+    {
+      "word": "in",
+      "tag": "O"
+    },
+    {
+      "word": "files/records",
+      "tag": "O"
+    },
+    {
+      "word": "created",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "from",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "usual",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "records",
+      "tag": "O"
+    },
+    {
+      "word": "as",
+      "tag": "O"
+    },
+    {
+      "word": "personnel",
+      "tag": "O"
+    },
+    {
+      "word": "employees",
+      "tag": "O"
+    },
+    {
+      "word": "separate",
+      "tag": "O"
+    },
+    {
+      "word": "purposes",
+      "tag": "O"
+    },
+    {
+      "word": "if",
+      "tag": "O"
+    },
+    {
+      "word": "if",
+      "tag": "O"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "O"
+    },
+    {
+      "word": "C.F.R.",
+      "tag": "O"
+    },
+    {
+      "word": "in",
+      "tag": "O"
+    },
+    {
+      "word": "29",
+      "tag": "O"
+    },
+    {
+      "word": "with",
+      "tag": "O"
+    },
+    {
+      "word": "with",
+      "tag": "O"
+    },
+    {
+      "word": "Disabilities",
+      "tag": "O"
+    },
+    {
+      "word": "29",
+      "tag": "O"
+    },
+    {
+      "word": "accordance",
+      "tag": "O"
+    },
+    {
+      "word": "with",
+      "tag": "O"
+    },
+    {
+      "word": "in",
+      "tag": "O"
+    },
+    {
+      "word": "accordance",
+      "tag": "O"
+    },
+    {
+      "word": "Americans",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "Act",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "1635.9,",
+      "tag": "O"
+    },
+    {
+      "word": "$",
+      "tag": "O"
+    },
+    {
+      "word": "applies,",
+      "tag": "O"
+    },
+    {
+      "word": "1630.14(c)(1),",
+      "tag": "O"
+    },
+    {
+      "word": "$",
+      "tag": "O"
+    },
+    {
+      "word": "Nondiscrimination",
+      "tag": "O"
+    },
+    {
+      "word": "Genetic",
+      "tag": "O"
+    },
+    {
+      "word": "Information",
+      "tag": "O"
+    },
+    {
+      "word": "Act",
+      "tag": "O"
+    },
+    {
+      "word": "applies.",
+      "tag": "O"
+    },
+    {
+      "word": "Doe",
+      "tag": "O"
+    },
+    {
+      "word": "J",
+      "tag": "O"
+    },
+    {
+      "word": "John",
+      "tag": "O"
+    },
+    {
+      "word": "name:",
+      "tag": "O"
+    },
+    {
+      "word": "Employee",
+      "tag": "O"
+    },
+    {
+      "word": "(1)",
+      "tag": "O"
+    },
+    {
+      "word": "First",
+      "tag": "O"
+    },
+    {
+      "word": "Middle",
+      "tag": "O"
+    },
+    {
+      "word": "Last",
+      "tag": "O"
+    },
+    {
+      "word": "LLC",
+      "tag": "O"
+    },
+    {
+      "word": "02/14/26",
+      "tag": "O"
+    },
+    {
+      "word": "North",
+      "tag": "O"
+    },
+    {
+      "word": "Valley",
+      "tag": "O"
+    },
+    {
+      "word": "(mm/dd/yyyy)",
+      "tag": "O"
+    },
+    {
+      "word": "Date:",
+      "tag": "O"
+    },
+    {
+      "word": "Employer",
+      "tag": "O"
+    },
+    {
+      "word": "name:",
+      "tag": "O"
+    },
+    {
+      "word": "(2)",
+      "tag": "O"
+    },
+    {
+      "word": "certification",
+      "tag": "O"
+    },
+    {
+      "word": "date",
+      "tag": "O"
+    },
+    {
+      "word": "(List",
+      "tag": "O"
+    },
+    {
+      "word": "requested)",
+      "tag": "O"
+    },
+    {
+      "word": "03/01/26",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "The",
+      "tag": "O"
+    },
+    {
+      "word": "certification",
+      "tag": "O"
+    },
+    {
+      "word": "be",
+      "tag": "O"
+    },
+    {
+      "word": "returned",
+      "tag": "O"
+    },
+    {
+      "word": "must",
+      "tag": "O"
+    },
+    {
+      "word": "(3)",
+      "tag": "O"
+    },
+    {
+      "word": "by",
+      "tag": "O"
+    },
+    {
+      "word": "(mm/dd/yyyy)",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "from",
+      "tag": "O"
+    },
+    {
+      "word": "it",
+      "tag": "O"
+    },
+    {
+      "word": "15",
+      "tag": "O"
+    },
+    {
+      "word": "faith",
+      "tag": "O"
+    },
+    {
+      "word": "allow",
+      "tag": "O"
+    },
+    {
+      "word": "date",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "least",
+      "tag": "O"
+    },
+    {
+      "word": "feasible",
+      "tag": "O"
+    },
+    {
+      "word": "calendar",
+      "tag": "O"
+    },
+    {
+      "word": "at",
+      "tag": "O"
+    },
+    {
+      "word": "unless",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "efforts.)",
+      "tag": "O"
+    },
+    {
+      "word": "diligent,",
+      "tag": "O"
+    },
+    {
+      "word": "employee's",
+      "tag": "O"
+    },
+    {
+      "word": "despite",
+      "tag": "O"
+    },
+    {
+      "word": "requested,",
+      "tag": "O"
+    },
+    {
+      "word": "(Must",
+      "tag": "O"
+    },
+    {
+      "word": "good",
+      "tag": "O"
+    },
+    {
+      "word": "days",
+      "tag": "O"
+    },
+    {
+      "word": "Associate",
+      "tag": "O"
+    },
+    {
+      "word": "Operations",
+      "tag": "O"
+    },
+    {
+      "word": "attached.",
+      "tag": "O"
+    },
+    {
+      "word": "/",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "Job",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "description",
+      "tag": "O"
+    },
+    {
+      "word": "title:",
+      "tag": "O"
+    },
+    {
+      "word": "Employee's",
+      "tag": "O"
+    },
+    {
+      "word": "job",
+      "tag": "O"
+    },
+    {
+      "word": "(4)",
+      "tag": "O"
+    },
+    {
+      "word": "Mon-",
+      "tag": "O"
+    },
+    {
+      "word": "PM",
+      "tag": "O"
+    },
+    {
+      "word": "Fri,",
+      "tag": "O"
+    },
+    {
+      "word": "8:00",
+      "tag": "O"
+    },
+    {
+      "word": "4:30",
+      "tag": "O"
+    },
+    {
+      "word": "work",
+      "tag": "O"
+    },
+    {
+      "word": "schedule:",
+      "tag": "O"
+    },
+    {
+      "word": "Employee's",
+      "tag": "O"
+    },
+    {
+      "word": "regular",
+      "tag": "O"
+    },
+    {
+      "word": "functions:",
+      "tag": "O"
+    },
+    {
+      "word": "Statement",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "essential",
+      "tag": "O"
+    },
+    {
+      "word": "employee's",
+      "tag": "O"
+    },
+    {
+      "word": "job",
+      "tag": "O"
+    },
+    {
+      "word": "Packages",
+      "tag": "O"
+    },
+    {
+      "word": "upto",
+      "tag": "O"
+    },
+    {
+      "word": "Lifting",
+      "tag": "O"
+    },
+    {
+      "word": "lbs",
+      "tag": "O"
+    },
+    {
+      "word": "40",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "with",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "essential",
+      "tag": "O"
+    },
+    {
+      "word": "notified",
+      "tag": "O"
+    },
+    {
+      "word": "determined",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "time",
+      "tag": "O"
+    },
+    {
+      "word": "held",
+      "tag": "O"
+    },
+    {
+      "word": "functions",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "reference",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "at",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "are",
+      "tag": "O"
+    },
+    {
+      "word": "(The",
+      "tag": "O"
+    },
+    {
+      "word": "position",
+      "tag": "O"
+    },
+    {
+      "word": "employee's",
+      "tag": "O"
+    },
+    {
+      "word": "position",
+      "tag": "O"
+    },
+    {
+      "word": "employee",
+      "tag": "O"
+    },
+    {
+      "word": "employee",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "leave",
+      "tag": "O"
+    },
+    {
+      "word": "is",
+      "tag": "O"
+    },
+    {
+      "word": "leave",
+      "tag": "O"
+    },
+    {
+      "word": "whichever",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "need",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "started,",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "earlier.)",
+      "tag": "O"
+    },
+    {
+      "word": "employer",
+      "tag": "O"
+    },
+    {
+      "word": "II",
+      "tag": "O"
+    },
+    {
+      "word": "PROVIDER",
+      "tag": "O"
+    },
+    {
+      "word": "SECTION",
+      "tag": "O"
+    },
+    {
+      "word": "HEALTH",
+      "tag": "O"
+    },
+    {
+      "word": "CARE",
+      "tag": "O"
+    },
+    {
+      "word": "-",
+      "tag": "O"
+    },
+    {
+      "word": "form.",
+      "tag": "O"
+    },
+    {
+      "word": "all",
+      "tag": "O"
+    },
+    {
+      "word": "has",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "relevant",
+      "tag": "O"
+    },
+    {
+      "word": "Your",
+      "tag": "O"
+    },
+    {
+      "word": "leave",
+      "tag": "O"
+    },
+    {
+      "word": "this",
+      "tag": "O"
+    },
+    {
+      "word": "Please",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "under",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "contact",
+      "tag": "O"
+    },
+    {
+      "word": "Section,",
+      "tag": "O"
+    },
+    {
+      "word": "information,",
+      "tag": "O"
+    },
+    {
+      "word": "provide",
+      "tag": "O"
+    },
+    {
+      "word": "complete",
+      "tag": "O"
+    },
+    {
+      "word": "sign",
+      "tag": "O"
+    },
+    {
+      "word": "patient",
+      "tag": "O"
+    },
+    {
+      "word": "requested",
+      "tag": "O"
+    },
+    {
+      "word": "parts",
+      "tag": "O"
+    },
+    {
+      "word": "your",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "sufficient",
+      "tag": "O"
+    },
+    {
+      "word": "The",
+      "tag": "O"
+    },
+    {
+      "word": "allows",
+      "tag": "O"
+    },
+    {
+      "word": "and",
+      "tag": "O"
+    },
+    {
+      "word": "that",
+      "tag": "O"
+    },
+    {
+      "word": "certification",
+      "tag": "O"
+    },
+    {
+      "word": "submit",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA.",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "an",
+      "tag": "O"
+    },
+    {
+      "word": "timely,",
+      "tag": "O"
+    },
+    {
+      "word": "require",
+      "tag": "O"
+    },
+    {
+      "word": "complete,",
+      "tag": "O"
+    },
+    {
+      "word": "employee",
+      "tag": "O"
+    },
+    {
+      "word": "support",
+      "tag": "O"
+    },
+    {
+      "word": "employer",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "condition",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "For",
+      "tag": "O"
+    },
+    {
+      "word": "condition\"",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "due",
+      "tag": "O"
+    },
+    {
+      "word": "for",
+      "tag": "O"
+    },
+    {
+      "word": "serious",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "leave",
+      "tag": "O"
+    },
+    {
+      "word": "\"serious",
+      "tag": "O"
+    },
+    {
+      "word": "to",
+      "tag": "O"
+    },
+    {
+      "word": "an",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "means",
+      "tag": "O"
+    },
+    {
+      "word": "employee.",
+      "tag": "O"
+    },
+    {
+      "word": "request",
+      "tag": "O"
+    },
+    {
+      "word": "purposes,",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "involves",
+      "tag": "O"
+    },
+    {
+      "word": "mental",
+      "tag": "O"
+    },
+    {
+      "word": "For",
+      "tag": "O"
+    },
+    {
+      "word": "condition",
+      "tag": "O"
+    },
+    {
+      "word": "that",
+      "tag": "O"
+    },
+    {
+      "word": "treatment",
+      "tag": "O"
+    },
+    {
+      "word": "illness,",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "by",
+      "tag": "O"
+    },
+    {
+      "word": "impairment,",
+      "tag": "O"
+    },
+    {
+      "word": "inpatient",
+      "tag": "O"
+    },
+    {
+      "word": "care",
+      "tag": "O"
+    },
+    {
+      "word": "continuing",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "provider.",
+      "tag": "O"
+    },
+    {
+      "word": "physical",
+      "tag": "O"
+    },
+    {
+      "word": "care",
+      "tag": "O"
+    },
+    {
+      "word": "injury,",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "definitions",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "serious",
+      "tag": "O"
+    },
+    {
+      "word": "condition",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "chart",
+      "tag": "O"
+    },
+    {
+      "word": "information",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "4.",
+      "tag": "O"
+    },
+    {
+      "word": "under",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "about",
+      "tag": "O"
+    },
+    {
+      "word": "FMLA,",
+      "tag": "O"
+    },
+    {
+      "word": "on",
+      "tag": "O"
+    },
+    {
+      "word": "more",
+      "tag": "O"
+    },
+    {
+      "word": "see",
+      "tag": "O"
+    },
+    {
+      "word": "a",
+      "tag": "O"
+    },
+    {
+      "word": "page",
+      "tag": "O"
+    },
+    {
+      "word": "also",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "other",
+      "tag": "O"
+    },
+    {
+      "word": "facts",
+      "tag": "O"
+    },
+    {
+      "word": "You",
+      "tag": "O"
+    },
+    {
+      "word": "but",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "provide",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "diagnosis,",
+      "tag": "O"
+    },
+    {
+      "word": "to,",
+      "tag": "O"
+    },
+    {
+      "word": "including",
+      "tag": "O"
+    },
+    {
+      "word": "are",
+      "tag": "O"
+    },
+    {
+      "word": "continuing",
+      "tag": "O"
+    },
+    {
+      "word": "required",
+      "tag": "O"
+    },
+    {
+      "word": "symptoms,",
+      "tag": "O"
+    },
+    {
+      "word": "appropriate",
+      "tag": "O"
+    },
+    {
+      "word": "regimen",
+      "tag": "O"
+    },
+    {
+      "word": "any",
+      "tag": "O"
+    },
+    {
+      "word": "may,",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "disclosure",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "allow",
+      "tag": "O"
+    },
+    {
+      "word": "laws",
+      "tag": "O"
+    },
+    {
+      "word": "Please",
+      "tag": "O"
+    },
+    {
+      "word": "such",
+      "tag": "O"
+    },
+    {
+      "word": "that",
+      "tag": "O"
+    },
+    {
+      "word": "local",
+      "tag": "O"
+    },
+    {
+      "word": "medical",
+      "tag": "O"
+    },
+    {
+      "word": "state",
+      "tag": "O"
+    },
+    {
+      "word": "treatment",
+      "tag": "O"
+    },
+    {
+      "word": "not",
+      "tag": "O"
+    },
+    {
+      "word": "note",
+      "tag": "O"
+    },
+    {
+      "word": "or",
+      "tag": "O"
+    },
+    {
+      "word": "as",
+      "tag": "O"
+    },
+    {
+      "word": "use",
+      "tag": "O"
+    },
+    {
+      "word": "some",
+      "tag": "O"
+    },
+    {
+      "word": "specialized",
+      "tag": "O"
+    },
+    {
+      "word": "private",
+      "tag": "O"
+    },
+    {
+      "word": "equipment.",
+      "tag": "O"
+    },
+    {
+      "word": "may",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "information",
+      "tag": "O"
+    },
+    {
+      "word": "and/or",
+      "tag": "O"
+    },
+    {
+      "word": "health",
+      "tag": "O"
+    },
+    {
+      "word": "about",
+      "tag": "O"
+    },
+    {
+      "word": "such",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "the",
+      "tag": "O"
+    },
+    {
+      "word": "serious",
+      "tag": "O"
+    },
+    {
+      "word": "treatment.",
+      "tag": "O"
+    },
+    {
+      "word": "condition,",
+      "tag": "O"
+    },
+    {
+      "word": "as",
+      "tag": "O"
+    },
+    {
+      "word": "patient's",
+      "tag": "O"
+    },
+    {
+      "word": "diagnosis",
+      "tag": "O"
+    },
+    {
+      "word": "providing",
+      "tag": "O"
+    },
+    {
+      "word": "course",
+      "tag": "O"
+    },
+    {
+      "word": "Form",
+      "tag": "O"
+    },
+    {
+      "word": "2020",
+      "tag": "O"
+    },
+    {
+      "word": "June",
+      "tag": "O"
+    },
+    {
+      "word": "Revised",
+      "tag": "O"
+    },
+    {
+      "word": "WH-380-E,",
+      "tag": "O"
+    },
+    {
+      "word": "of",
+      "tag": "O"
+    },
+    {
+      "word": "4",
+      "tag": "O"
+    },
+    {
+      "word": "Page",
+      "tag": "O"
+    }
+  ]
+}

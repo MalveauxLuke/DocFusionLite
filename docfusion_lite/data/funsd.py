@@ -23,7 +23,7 @@ def _json_paths(root: Path, split: str) -> Tuple[Path, Path]:
         return root / "training_data" / "annotations", root / "training_data" / "images"
     if split == "test":
         return root / "testing_data" / "annotations", root / "testing_data" / "images"
-    raise ValueError("split must be 'train' or 'test'")
+    raise ValueError("split must be 'train' or 'est'")
 
 
 def funsd_to_samples(funsd_root: str, split: str) -> Tuple[List[Dict[str, Any]], str]:
