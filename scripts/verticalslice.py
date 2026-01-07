@@ -34,7 +34,7 @@ def move_batch_to_device(batch, device: torch.device):
         if torch.is_tensor(v):
             setattr(batch, k, v.to(device, non_blocking=True))
     return batch
-from PIL import Image, ImageDraw, ImageFont
+
 
 def overlay_annotations(image_path, words, bboxes, output_path):
     image = Image.open(image_path).convert("RGB")
@@ -52,12 +52,11 @@ def overlay_annotations(image_path, words, bboxes, output_path):
     output_path = str(output_path)
     image.save(output_path)
     print(f"Annotated image saved as {output_path}")
+    
 
 def tokens_to_word_tags(tokenizer, words, pred_token_ids, *, max_length: int):
     """
     Map token-level predictions -> word-level tags using tokenizer.word_ids().
-
-    Strategy: take the FIRST token prediction for each word id.
     """
     enc = tokenizer(
         words,
@@ -184,14 +183,14 @@ def main():
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # repo root (DocFusionLite/)
+    # repo root
     ROOT = Path(__file__).resolve().parents[1]
 
-    # paths to your textract artifacts
+    # paths to textract
     textract_json_path = ROOT / "docfusion_lite" / "data" / "textracttest" / "out_detect_hw.json"
     img_path = ROOT / "docfusion_lite" / "data" / "textracttest" / "form-wh-380-e-813x1024-hw.jpg"
 
-    # output directory under scripts/
+   
     OUT_DIR = Path(__file__).resolve().parent / "textractoutput"
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUT_DIR / "annotated_page1.jpg"
@@ -260,7 +259,7 @@ def main():
         bboxes=s0["bboxes"],
         word_tags=pred_word_tags,
         output_path=out_pred,
-        draw_all=False,   # set True if you want to draw every word
+        draw_all=False,   # set True to draw every word
     )
 
     doc_id = Path(s0["image_path"]).stem

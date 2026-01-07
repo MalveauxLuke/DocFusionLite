@@ -1,39 +1,10 @@
 """
-Textract DetectDocumentText JSON -> your existing DocumentDataset sample format.
-
-Your DocumentDataset expects each sample:
-{
-  "words": List[str],
-  "bboxes": List[[x0,y0,x1,y1]]   # PIXEL coords
-  "width": int,
-  "height": int,
-  "image_path": str,
-  "word_labels": List[str]        # word-level BIO tags, same length as words
-}
-
-For a simple FMAL vertical slice, a reasonable 4-field label set might be:
-  - name        (employee / patient / requester name)
-  - dob         (date of birth)
-  - id          (employee ID / member ID / case ID)
-  - phone       (phone number)
-
-BIO label examples:
-  - "O"
-  - "B-name", "I-name"
-  - "B-dob",  "I-dob"
-  - "B-id",   "I-id"
-  - "B-phone","I-phone"
-
-NOTE: This converter does NOT magically generate correct labels. It just outputs the
-schema and will fill everything with default_label (usually "O") unless you later
-replace word_labels with actual annotations or heuristic labels.
-
 This converter:
 - reads out_detect.json (Textract)
 - extracts WORD blocks
 - sorts into a stable reading order
 - converts Textract normalized boxes -> pixel boxes using the actual image size
-- emits 1 sample per page (recommended)
+- emits 1 sample per page 
 """
 
 from __future__ import annotations
