@@ -52,7 +52,7 @@ def overlay_annotations(image_path, words, bboxes, output_path):
     output_path = str(output_path)
     image.save(output_path)
     print(f"Annotated image saved as {output_path}")
-    
+
 
 def tokens_to_word_tags(tokenizer, words, pred_token_ids, *, max_length: int):
     """
@@ -75,7 +75,6 @@ def tokens_to_word_tags(tokenizer, words, pred_token_ids, *, max_length: int):
         if wid not in wid_to_pred:
             wid_to_pred[wid] = int(pred_token_ids[tok_i])
 
-    # align to words length (some may be truncated -> default to 0 which is "O")
     out = [wid_to_pred.get(i, 0) for i in range(len(words))]
     return out
 def bio_decode_spans(words: List[str], tags: List[str]) -> Dict[str, List[str]]:
@@ -112,7 +111,7 @@ def bio_decode_spans(words: List[str], tags: List[str]) -> Dict[str, List[str]]:
             cur_field = field
             cur_tokens = [w]
         elif pref == "I":
-            # continue only if same field; otherwise start new
+            
             if cur_field == field:
                 cur_tokens.append(w)
             else:
@@ -138,7 +137,7 @@ def write_prediction_json(
     payload = {
         "doc_id": doc_id,
         "page": page_num,
-        "extracted": extracted,      # field -> list of strings
+        "extracted": extracted,      
         "word_predictions": [
             {"word": w, "tag": t} for w, t in zip(words, tags)
         ],
@@ -167,11 +166,10 @@ def overlay_predictions(image_path, words, bboxes, word_tags, output_path, *, dr
     for bb, tag in zip(bboxes, word_tags):
         x0, y0, x1, y1 = bb
 
-        # box color: red for entity, green for O (optional)
+  
         outline = "red" if tag != "O" else "green"
         draw.rectangle([x0, y0, x1, y1], outline=outline, width=2)
 
-        # tag only (no word)
         draw.text((x0, max(0, y0 - 10)), tag, fill=outline, font=font)
 
     image.save(str(output_path))
@@ -183,10 +181,10 @@ def main():
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # repo root
+    
     ROOT = Path(__file__).resolve().parents[1]
 
-    # paths to textract
+    
     textract_json_path = ROOT / "docfusion_lite" / "data" / "textracttest" / "out_detect_hw.json"
     img_path = ROOT / "docfusion_lite" / "data" / "textracttest" / "form-wh-380-e-813x1024-hw.jpg"
 
@@ -195,15 +193,15 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out_path = OUT_DIR / "annotated_page1.jpg"
 
-    # 1 Textract JSON -> samples
+    
     samples = textract_detect_to_page_samples(
         textract_json_path=textract_json_path,
         image_paths_by_page={1: img_path},
         default_label="O",
-        image_path_in_sample="absolute",  # makes s0["image_path"] definitely loadable anywhere
+        image_path_in_sample="absolute", 
     )
 
-    # 2 draw boxes+words
+    
     [s0] = samples  
     overlay_annotations(
         image_path=s0["image_path"],
@@ -247,7 +245,7 @@ def main():
 
     pred_token_ids = logits.argmax(dim=-1)[0].detach().cpu().tolist()  # (T,)
 
-    # build id2label from your label maps
+    
     _, id2label = build_label_maps()
     pred_word_ids = tokens_to_word_tags(ds.tokenizer, s0["words"], pred_token_ids, max_length=ds.max_length)
     pred_word_tags = [id2label[i] for i in pred_word_ids]
@@ -259,7 +257,7 @@ def main():
         bboxes=s0["bboxes"],
         word_tags=pred_word_tags,
         output_path=out_pred,
-        draw_all=False,   # set True to draw every word
+        draw_all=False,  
     )
 
     doc_id = Path(s0["image_path"]).stem

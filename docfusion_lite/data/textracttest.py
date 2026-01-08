@@ -22,12 +22,6 @@ def build_label_maps(fields: List[str] = SLICE_FIELDS) -> Tuple[Dict[str, int], 
     """
     Builds BIO label maps for token classification.
 
-    Example labels:
-      O
-      B-name, I-name
-      B-dob,  I-dob
-      B-id,   I-id
-      B-phone,I-phone
     """
     labels: List[str] = ["O"]
     for f in fields:
@@ -95,7 +89,7 @@ def textract_detect_to_page_samples(
     image_paths_by_page: Dict[int, str | Path],
     *,
     default_label: str = "O",
-    image_path_in_sample: str = "relative",  # "relative" or "absolute"
+    image_path_in_sample: str = "relative",  
 ) -> List[Dict[str, Any]]:
     """
     Convert Textract DetectDocumentText output into a list of samples (1 per page),
@@ -107,7 +101,7 @@ def textract_detect_to_page_samples(
 
     words_all = _extract_textract_words(textract)
 
-    # group by page
+    
     by_page: Dict[int, List[Dict[str, Any]]] = {}
     for w in words_all:
         by_page.setdefault(w["page"], []).append(w)
@@ -123,14 +117,14 @@ def textract_detect_to_page_samples(
 
         img_path = Path(image_paths_by_page[page_num])
         with Image.open(img_path) as img:
-            W, H = img.size  # pixel width/height
+            W, H = img.size  
 
         words: List[str] = []
         bboxes: List[List[float]] = []
 
         for w in page_words:
             x0n, y0n, x1n, y1n = w["box_norm"]
-            # normalized -> pixel coords
+            
             x0 = x0n * W
             y0 = y0n * H
             x1 = x1n * W
@@ -138,7 +132,7 @@ def textract_detect_to_page_samples(
             words.append(w["text"])
             bboxes.append([x0, y0, x1, y1])
 
-        # placeholder labels (replace later with real BIO labels)
+  
         word_labels = [default_label] * len(words)
 
         image_path_field = str(img_path.resolve()) if image_path_in_sample == "absolute" else str(img_path)
@@ -146,12 +140,12 @@ def textract_detect_to_page_samples(
         samples.append(
             {
                 "words": words,
-                "bboxes": bboxes,   # pixel coords
+                "bboxes": bboxes,   
                 "width": W,
                 "height": H,
                 "image_path": image_path_field,
                 "word_labels": word_labels,
-                "page": page_num,   # extra metadata (ignored by your dataset)
+                "page": page_num,   
             }
         )
 
