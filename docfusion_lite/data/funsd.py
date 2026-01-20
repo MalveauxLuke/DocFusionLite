@@ -66,7 +66,6 @@ def funsd_to_samples(funsd_root: str, split: str) -> Tuple[List[Dict[str, Any]],
         bboxes: List[List[int]] = []
         word_labels: List[str] = []
 
-        # --- BIO CREATION HAPPENS HERE ---
         for ent in data.get("form", []):
             ent_label = (ent.get("label") or "other").lower()
             ent_words = ent.get("words", [])
@@ -92,7 +91,6 @@ def funsd_to_samples(funsd_root: str, split: str) -> Tuple[List[Dict[str, Any]],
                 words.append(txt)
                 bboxes.append([x0, y0, x1, y1])
                 word_labels.append(tag)
-        # --- END BIO CREATION ---
 
         if not words:
             continue

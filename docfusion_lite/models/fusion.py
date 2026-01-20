@@ -4,6 +4,7 @@ import torch
 import torch.nn as nn
 from typing import Optional
 
+
 class FusionStem(nn.Module):
     """
     Initial fusion of text + per-token visual features.
@@ -25,11 +26,10 @@ class FusionStem(nn.Module):
 
         if d_hidden is None:
             d_hidden = 2 * d_model
-        
 
         self.use_gate = use_gate
         self.gate_per_dim = gate_per_dim
-        
+
         self.ln_in = nn.LayerNorm(2 * d_model)
 
         self.mlp = nn.Sequential(
@@ -39,7 +39,6 @@ class FusionStem(nn.Module):
             nn.Dropout(dropout),
         )
 
-        
         self.gate_layer = nn.Linear(2 * d_model, d_model)
 
     def forward(
@@ -48,11 +47,11 @@ class FusionStem(nn.Module):
         region_proj: torch.Tensor, # (B, T, d_model)
         g_doc: Optional[torch.Tensor] = None, # (B,1,1)
     ) -> torch.Tensor:
-        
+
         x = torch.cat([h_text, region_proj], dim=-1)  # (B,T,2d)
         x = self.ln_in(x)
 
-        delta = self.mlp(x) # (B,T,d)
+        delta = self.mlp(x)  # (B,T,d)
 
         if self.use_gate:
             gate_full = torch.sigmoid(self.gate_layer(x))
@@ -66,7 +65,7 @@ class FusionStem(nn.Module):
             delta = delta * g_doc
 
         return h_text + delta
-    
+
 
 class FusionLayer(nn.Module):
     """
@@ -75,9 +74,8 @@ class FusionLayer(nn.Module):
     Each layer:
       - (optional) re-fuse text with region_proj via concat+MLP residual
       - cross-attend tokens (queries) to patch_feats (keys/values)
+      - (new) post-cross FFN (Transformer-style)
       - residual + norms
-
-    This is only used in 3.3; 3.1 doesn't need this class.
     """
 
     def __init__(
@@ -89,8 +87,10 @@ class FusionLayer(nn.Module):
         use_region_ffn: bool = True,
         use_gate: bool = False,
         gate_per_dim: bool = False,
-        gate_region_with_doc: bool = False,
+        gate_region_with_doc: bool = True,
         gate_cross_with_doc: bool = True,
+        gate_ffn_with_doc: bool = False,
+        ffn_hidden_mult: float = 4.0,
     ):
         super().__init__()
         if d_hidden is None:
@@ -101,7 +101,9 @@ class FusionLayer(nn.Module):
         self.gate_per_dim = gate_per_dim
         self.gate_region_with_doc = gate_region_with_doc
         self.gate_cross_with_doc = gate_cross_with_doc
+        self.gate_ffn_with_doc = gate_ffn_with_doc
 
+        # 1) Optional region-based FFN fusion
         if use_region_ffn:
             self.ln_region = nn.LayerNorm(2 * d_model)
             self.region_mlp = nn.Sequential(
@@ -110,20 +112,30 @@ class FusionLayer(nn.Module):
                 nn.Linear(d_hidden, d_model),
                 nn.Dropout(dropout),
             )
-            # always define gate_layer with full dim
-            self.gate_layer = nn.Linear(2 * d_model, d_model)
-        
-        # Cross-attention to patch features
+            self.gate_layer = nn.Linear(2 * d_model, d_model)  # (B,T,d)
+
+        # 2) Cross-attention to patch features
         self.ln_cross = nn.LayerNorm(d_model)
+        self.ln_patch = nn.LayerNorm(d_model)  # NEW: normalize K/V side
+
         self.cross_attn = nn.MultiheadAttention(
             embed_dim=d_model,
             num_heads=n_heads,
             dropout=dropout,
             batch_first=True,
         )
-        
         self.dropout_cross = nn.Dropout(dropout)
 
+        # 3) Post-cross FFN (Transformer-style)
+        ffn_hidden = int(ffn_hidden_mult * d_model)
+        self.ln_ffn = nn.LayerNorm(d_model)
+        self.ffn = nn.Sequential(
+            nn.Linear(d_model, ffn_hidden),
+            nn.GELU(),
+            nn.Linear(ffn_hidden, d_model),
+            nn.Dropout(dropout),
+        )
+        self.dropout_ffn = nn.Dropout(dropout)
 
     def forward(
         self,
@@ -131,9 +143,10 @@ class FusionLayer(nn.Module):
         region_proj: torch.Tensor,       # (B, T, d_model)
         patch_feats: torch.Tensor,       # (B, P, d_model)
         g_doc: Optional[torch.Tensor] = None,       # (B,1,1) or None
-        text_mask: Optional[torch.Tensor] = None,   # (B, T) or None
-        patch_mask: Optional[torch.Tensor] = None,  # (B, P) or None
+        text_mask: Optional[torch.Tensor] = None,   # (B, T) or None (1=keep, 0=pad)
+        patch_mask: Optional[torch.Tensor] = None,  # (B, P) or None (True=pad for MHA)
     ) -> torch.Tensor:
+
         # 1) Optional region-based FFN fusion
         if self.use_region_ffn:
             x = torch.cat([h, region_proj], dim=-1)  # (B,T,2d)
@@ -145,33 +158,47 @@ class FusionLayer(nn.Module):
                 if self.gate_per_dim:
                     gate = gate_full
                 else:
-                    gate = gate_full.mean(dim=-1, keepdim=True)
+                    gate = gate_full.mean(dim=-1, keepdim=True)  # (B,T,1)
                 delta = gate * delta
 
-            if (g_doc is not None) and self.gate_region_with_doc: # gating for entire document
+            if (g_doc is not None) and self.gate_region_with_doc:
                 delta = delta * g_doc
 
             h = h + delta
-        # 2) Cross-attention (PRE-LN) + doc-gate on attn residual only    
+
+        # 2) Cross-attention (PRE-LN) + doc-gate on attn residual only
         if patch_feats is not None:
             key_padding_mask = patch_mask
             if key_padding_mask is not None:
-                key_padding_mask = key_padding_mask.bool()  # True=pad
+                # MultiheadAttention expects bool mask: True = ignore (pad)
+                key_padding_mask = key_padding_mask.bool()
 
             q = self.ln_cross(h)
+            kv = self.ln_patch(patch_feats)  # NEW: normalize K/V
+
             attn_out, _ = self.cross_attn(
                 query=q,
-                key=patch_feats,
-                value=patch_feats,
+                key=kv,
+                value=kv,
                 key_padding_mask=key_padding_mask,
                 need_weights=False,
             )
 
-            if g_doc is not None:
+            if (g_doc is not None) and self.gate_cross_with_doc:
                 attn_out = attn_out * g_doc
 
             h = h + self.dropout_cross(attn_out)
 
+        # 3) Post-cross FFN (PRE-LN) + optional doc-gate
+        ffn_in = self.ln_ffn(h)
+        ffn_out = self.ffn(ffn_in)
+
+        if (g_doc is not None) and self.gate_ffn_with_doc:
+            ffn_out = ffn_out * g_doc
+
+        h = h + self.dropout_ffn(ffn_out)
+
+        # Optional hard masking of padded text tokens
         if text_mask is not None:
             h = h * text_mask.to(h.dtype).unsqueeze(-1)
 

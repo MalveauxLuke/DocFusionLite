@@ -37,7 +37,7 @@ class DocFusionModel(nn.Module):
         use_gate_fusion_layer: bool = False,  # only used in 3.3
         use_region_ffn: bool = True,    # only used in 3.3
         use_doc_gate: bool = True,
-        text_model_name: str = "microsoft/deberta-v3-base",
+        text_model_name: str = "SCUT-DLVCLab/lilt-roberta-en-base",
         vision_model_name: str = "microsoft/dit-base",
     ):
         super().__init__()
@@ -135,10 +135,16 @@ class DocFusionModel(nn.Module):
             token_mask=batch.attention_mask,
         ) # region_feats: (B, T, d_patch) region_mask: (B, T)
         region_proj  = self.region_proj(region_feats) # (B, T, d_patch)->(B,T,d_model)
+
+        #patch_feats = None
+        #region_proj = torch.zeros_like(region_proj)
+
+        # g_doc = None
         # 4. Initital fusion (fusion stem)
         h = self.fusion_stem(
             h_text=h_text,
             region_proj=region_proj,
+            g_doc=g_doc,
         )# h: (B,T,d_model)
         # 5. deep Fusion (3.3)
         if self.mode == "3.3" and len(self.fusion_layers) > 0:
