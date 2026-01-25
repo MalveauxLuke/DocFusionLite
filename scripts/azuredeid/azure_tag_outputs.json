@@ -1,0 +1,102 @@
+[
+  {
+    "page": 1,
+    "entities": [
+      {
+        "category": "PhiCategory.ORGANIZATION",
+        "offset": 46,
+        "length": 3
+      },
+      {
+        "category": "PhiCategory.ID_NUM",
+        "offset": 212,
+        "length": 9
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 309,
+        "length": 9
+      },
+      {
+        "category": "PhiCategory.COUNTRY_OR_REGION",
+        "offset": 580,
+        "length": 1
+      },
+      {
+        "category": "PhiCategory.HOSPITAL",
+        "offset": 914,
+        "length": 3
+      },
+      {
+        "category": "PhiCategory.URL",
+        "offset": 929,
+        "length": 29
+      },
+      {
+        "category": "PhiCategory.PATIENT",
+        "offset": 1995,
+        "length": 10
+      },
+      {
+        "category": "PhiCategory.PATIENT",
+        "offset": 2031,
+        "length": 11
+      },
+      {
+        "category": "PhiCategory.ORGANIZATION",
+        "offset": 2043,
+        "length": 16
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 2066,
+        "length": 8
+      },
+      {
+        "category": "PhiCategory.ID_NUM",
+        "offset": 2082,
+        "length": 4
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 2143,
+        "length": 8
+      },
+      {
+        "category": "PhiCategory.PROFESSION",
+        "offset": 2358,
+        "length": 10
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 2443,
+        "length": 3
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 2448,
+        "length": 3
+      },
+      {
+        "category": "PhiCategory.ID_NUM",
+        "offset": 3922,
+        "length": 2
+      },
+      {
+        "category": "PhiCategory.MEDICAL_RECORD",
+        "offset": 3925,
+        "length": 3
+      },
+      {
+        "category": "PhiCategory.ID_NUM",
+        "offset": 3929,
+        "length": 1
+      },
+      {
+        "category": "PhiCategory.DATE",
+        "offset": 3940,
+        "length": 9
+      }
+    ]
+  }
+]
